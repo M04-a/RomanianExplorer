@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Romanian Explorer</title>   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e1db5b3ea.js" crossorigin="anonymous"></script>
+    <link
+            rel="icon"
+            href=
+"imagini/icon.PNG"
+            type="image/x-icon"
+        />
+</head>
+    <body>
+    <section class="subheader">
+        <nav>
+        <a href="index.html"><img src="imagini/logo.PNG"></a>
+            <div class="nav-links">
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="locatii.html">LOCAȚII</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="about.html">ABOUT</a></li>    
+                </ul>
+            </div>
+        </nav>
+        <h1>Despre Noi</h1>
+    </section>
+        
+<!----------about----------->
+<section class="about">
+
+    <div class="row">
+    <div class="about-col">
+       <h1>Aici sunt prietenii tăi de drumeții</h1>
+        <p>Suntem o comunitate pasionată de explorarea frumuseților țării și de împărtășirea experiențelor noastre pentru a ajuta alți călători să descopere tot ce are România de oferit. Pe Romanian Explorer, veți găsi recenzii autentice și informații utile despre cele mai captivante atracții turistice, de la castele medievale și biserici vechi până la peisaje naturale uimitoare și orașe vibrante.
+        Fie că sunteți în căutare de aventură în munți sau relaxare pe plajele mării, călătorii culturale sau explorări gastronomice, avem toate informațiile de care aveți nevoie pentru a vă planifica următoarea excursie în România. Fiecare recenzie este realizată de către membrii comunității noastre, oferindu-vă perspective autentice și imparțiale asupra experiențelor lor.
+        Alăturați-vă nouă pe Romanian Explorer și începeți să vă explorați următoarea aventură în România împreună cu noi! Fiți parte dintr-o comunitate pasionată și descoperiți cele mai frumoase și captivante destinații din țara noastră.</p>
+        <a href="locatii.html" class="hero-btn green-btn">Descoperă acum!</a>
+    </div>     
+    <div class="about-col">
+    <img src="imagini/about.jpg">
+    </div>
+    </div>
+    
+    
+        
+</section>
+        
+<section class="location">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3937.486178294586!2d21.225727119612312!3d45.74667157788256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d831ccc8ff7%3A0x255d397f5edeea71!2sFacultatea%20de%20Automatic%C4%83%20%C8%99i%20Calculatoare%2C%20Timi%C8%99oara!5e0!3m2!1sro!2sro!4v1715277855589!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+</section>  
+        
+        
+<section class="contact">
+<div class="row">
+    <div class="contact-col">
+        <div>
+        <i class="fa fa-home"></i>
+            <span>
+                <h5>Bulevardul Vasile Pârvan 2</h5>
+                <p>Timișoara, Timiș, România</p>
+            </span>
+        </div>
+        <div>
+        <i class="fa fa-phone"></i>
+            <span>
+                <h5>0256-403211</h5>
+                <p>Audiență: Luni–Joi 13:00 - 15:00, Vineri 11:00 - 13:00</p>
+            </span>
+        </div>
+        <div>
+        <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>maria.petofi@upt.ro</h5>
+                <p>Adresa de email</p>
+            </span>
+        </div>
+    </div>
+    <div class="contact-col">
+        <form id="myForm" onsubmit="return validateForm()">
+        <input type="text" id="nume" placeholder="Adăugați numele" required>
+        <input type="text" id="tel" placeholder="Adăugați telefon" required>
+        <input type="email" id="email" placeholder="Adăugați adresa email" required>
+        <input type="text" id="comentariu" placeholder="Adăugați comentariu" required>
+        <textarea id="mesaj" rows="8" placeholder="Mesaj" required></textarea>
+        <button type="submit" class="hero-btn green-btn">Trimite mesaj</button>
+    </form>
+        
+    </div>
+</div>     
+</section>
+ 
+        
+<!----------footer-----------> 
+<section class="footer">
+<h3>Contact</h3>
+    <p> Ne-am propus să vă oferim cele mai bune informații pentru a vă ajuta să vă planificați călătoriile. Contactați-ne pentru întrebări sau feedback</p>
+    <div class="icons">
+    <a href="https://www.facebook.com/ciopeica.mihnea.3"><i class="fa-brands fa-facebook" style="color: #43f22c;"></i></a>
+    <a href="https://www.instagram.com/mihnea.ciopeica/?hl=ro"><i class="fa-brands fa-instagram"style="color: #43f22c;"></i></a>
+    <a href="https://www.tiktok.com/@psg"><i class="fa-brands fa-tiktok"style="color: #43f22c;"></i></a>
+    <a href="https://twitter.com/PSG_English"><i class="fa-brands fa-twitter"style="color: #43f22c;"></i></a>
+    </div>
+        </section>
+
+
+<script>
+function validateForm() {
+    var numeInput = document.getElementById("nume").value;
+    var emailInput = document.getElementById("email").value;
+    var telInput = document.getElementById("tel").value;
+
+    var numeRegex = /^[a-zA-Z\s]+$/;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var telRegex=/^[0-9]*$/;
+
+    if (!numeRegex.test(numeInput)) {
+        alert("Numele poate conține doar litere și/sau spații!");
+        return false;
+    }
+
+    if (!emailRegex.test(emailInput)) {
+        alert("Adresa de email nu este validă!");
+        return false;
+    }
+
+    if (!telRegex.test(telInput)) {
+        alert("Numărul de telefon trebuie să conțină doar cifre!");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagini/fundal.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+nav img
+{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.nav-links ul li::after{
+   content: '';
+    width: 0%;
+    height: 2px;
+    background: #90EE90;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box
+{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1
+{
+    font-size: 62px;
+}
+
+.text-box p
+{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+
+.hero-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border: 1px solid #90EE90;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover
+{
+    border: 1px solid #008000;
+    background: #008000;
+    transition: 1s;
+}
+
+
+@media(max-width:700px)
+{
+    
+.text-box h1
+{
+    font-size: 20px;
+}
+   
+    
+.text-box p
+    {
+        font-size: 9px;
+    }
+    
+.nav-links ul li
+{
+   display: block;
+}
+    
+.nav-links
+    {
+        position: fixed;
+        background: #008000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+         
+    }
+    
+}
+
+
+
+h1
+{
+    font-size:  36px;
+    font-weight: 600;
+     color: forestgreen;
+}
+
+
+p
+{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.var 
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.var-col
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.var-col img 
+{
+    width: 100%;
+    display: block;
+}
+
+
+.layer
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover
+{
+    background: rgba(0, 90, 0, 0.7);
+}
+
+.layer h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+.recenzii
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.recenzii-col
+{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: lightgreen;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.recenzii-col img
+{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+
+.recenzii-col p
+{
+    color: darkgreen;
+    padding: 0;
+}
+
+.recenzii-col h3
+{
+    margin-top: 10px;
+    text-align: left;
+    color: forestgreen;
+}
+
+/*FOOTER*/
+
+.footer
+{
+    background-color: darkgreen;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+.footer h3
+{
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer p
+{
+    color: lightgreen;
+}
+
+.icons .fa
+{
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    
+}
+
+
+/*ABOUT*/
+
+.subheader
+{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagini/fundal2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.subheader h1
+{
+    color: white;
+}
+
+.about
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col
+{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img
+{
+    width: 100%;
+}
+
+.about-col h1
+{
+    padding-top: 0;
+}
+
+.about-col p
+{
+    padding: 15px 0 25px;
+}
+
+
+.green-btn
+{
+    background: transparent;
+    color:forestgreen;
+}
+
+.green-btn:hover
+{
+    color: white;
+}
+
+
+.location
+{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe
+{
+    width: 100%;
+}
+
+/*Blog*/
+
+
+.blog-content
+{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog-l
+{
+    flex-basis: 65%;
+}
+
+.blog-l img
+{
+    width: 100%;
+}
+
+.blog-l h2
+{
+    color: black;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.blog-l p
+{
+    color: ;
+    padding: 0;
+}
+
+.blog-r
+{
+    flex-basis: 32%;
+}
+
+.blog-r h3
+{
+    text-align: center;
+    background:#228B22;
+    color: white;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-r div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.comment
+{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment h3
+{
+    text-align: left;
+}
+
+
+.comment-form input, .comment-form textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form button
+{
+    margin: 10px 0;
+}
+
+.contact
+{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col
+{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa
+{
+    font-size: 28px;
+    color: forestgreen;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p
+{
+    padding: 0;
+}
+
+.contact-col div h5
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: darkgreen;
+    font-weight: 400;
+}
+
+
+.contact-col input, .contact-col textarea
+{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/*Locatii*/
+
+.loc_titlu
+{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color:forestgreen;
+    text-align: center;
+}
+
+.loc
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+}
+
+.loc div img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.loc div
+{
+    position: relative;
+    
+}
+
+.cta
+{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, green, transparent),url(imagini/about_fundal.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+.cta h3
+{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p
+{
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+.cta-btn
+{
+    background: darkgreen;
+    border-color: lightgreen;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+
+
+.ab
+{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, green, transparent),url(imagini/about_fundal2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+.ab h3
+{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.ab p
+{
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+.ab-btn
+{
+    background: darkgreen;
+    border-color: lightgreen;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+
+
+
