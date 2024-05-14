@@ -19,8 +19,8 @@
     <section class="subheader">
         <nav>
         <a href="index.html"><img src="imagini/logo.PNG"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <div class="nav-links">
+              
                  <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="locatii.html">LOCAȚII</a></li>
@@ -28,7 +28,7 @@
                 <li><a href="about.html">ABOUT</a></li>    
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+        
         </nav>
         <h1>Despre Noi</h1>
     </section>
@@ -139,16 +139,7 @@ function validateForm()
         }
 
     return true;
-}
-var navLinks = document.getElementById("navLinks");    
-    function showMenu()
-        {
-            navLinks.style.right="0";
-        }
-    function hideMenu()
-        {
-            navLinks.style.right="-200px";
-        }     
+}    
 </script> 
 
         
