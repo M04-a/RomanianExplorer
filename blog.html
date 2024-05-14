@@ -19,14 +19,16 @@
     <section class="subheader">
         <nav>
         <a href="index.html"><img src="imagini/logo.PNG"></a>
-            <div class="nav-links">
-                <ul>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                 <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="locatii.html">LOCAȚII</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="about.html">ABOUT</a></li>    
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <h1>BLOG</h1>
     </section>
@@ -103,5 +105,20 @@
     <a href="https://twitter.com/PSG_English"><i class="fa-brands fa-twitter"style="color: #43f22c;"></i></a>
     </div>
         </section>
-    </body>
+
+<script>
+    var navLinks = document.getElementById("navLinks");    
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }     
+</script>
+    
+    
+    
+</body>
 </html>
